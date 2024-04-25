@@ -8,7 +8,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/
 
 # Copier les fichiers de votre application dans le répertoire www de NGINX
-COPY /home/admin/website /usr/share/nginx/html/
+COPY /home/admin/website/finexo-html /usr/share/nginx/html/
 
 # Exposer le port 80
 EXPOSE 80
